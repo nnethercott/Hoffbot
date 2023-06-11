@@ -1,5 +1,5 @@
 # Hoffbot
 
 <p align="center">
-<img src="media/sped-cropped-trim.gif" width=600>
+<img src="media/sped-cropped-trim.gif" width=450>
 </p>
