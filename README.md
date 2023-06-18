@@ -5,7 +5,7 @@
 </p>
 
 ## Movitation
-YouTube is rich in text data hidden in the subtitles included in each video.  You can imagine that having access to this text data in a way is equivalent to having access to the knowledge base of the YouTuber themself, so that either **conversational agents** mimicking their disposition or **retrieval-based chat bots** for question answering can be designed.  In this project we choose the latter of these two.
+YouTube is rich in text data hidden in the subtitles included in each video.  You can imagine that having access to this text data is equivalent in a way to having access to the knowledge of the YouTuber themself. With that in mind, **conversational agents** mimicking the YouTuber or **retrieval-based chat bots** using spoken facts from videos can be designed.  In this project we choose the latter of these two.
 
 Using subtitles collected from ~200 [James Hoffman](https://www.youtube.com/channel/UCMb0O2CdPBNi-QqPk5T3gsQ) videos we design a chatbot capable of answering general coffee-related questions using explicitly the knowledge contained in his videos.  A first querying step is done through sentence embeddings with cosine similarity ranking on the corpus of subtitles, then a secondary reranking is performed with a cross-encoder. Finally we make use of Flan-T5 to extract the answer from the most relevant document, or acknowledge that the question is unanswerable.  
 
